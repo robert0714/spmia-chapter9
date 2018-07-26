@@ -6,10 +6,11 @@ eureka:
   client:
     registerWithEureka: false
     fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://localhost:8761
   server:
     waitTimeInMsWhenSyncEmpty: 0
-  serviceUrl:
-    defaultZone: http://localhost:8761
+  
 
 #Setting logging levels
 logging:
@@ -17,3 +18,7 @@ logging:
     com.netflix: WARN
     org.springframework.web: WARN
     com.thoughtmechanix: DEBUG
+    
+management:
+  security:
+     enabled: false
