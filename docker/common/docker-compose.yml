@@ -67,6 +67,7 @@ services:
       REDIS_PORT:          "6379"
       ZIPKIN_PORT:         "9411"
       ENCRYPT_KEY:       "IMSYMMETRIC"
+#      example.property: "I AM IN THE DEFAULT"
     depends_on:
       - "database"
       - "configserver"  
